@@ -31,9 +31,10 @@ main{
 main img {
     width: 150px;
     height: auto;
-    box-shadow: 0 0 30px rgb(59, 58, 58);
     border: #463737;
-    padding: 0;
+    padding: 1px;
+    box-shadow: 0 0 30px rgb(59, 58, 58);
+    
 }
 
 p {
