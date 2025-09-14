@@ -18,6 +18,7 @@ nav a {
     border-radius: 4px;
     transition: background 0.2s;
 }
+body {background-image: url("../images/national monument");}
 
 main{
     max-width: 840px;
@@ -34,10 +35,10 @@ p {
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
+    width: 20em;
+    margin: 1em;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: 1em;
     background-color: #eee;
     color: #333;
     text-align: center;
