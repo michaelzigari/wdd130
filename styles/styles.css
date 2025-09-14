@@ -33,6 +33,7 @@ main img {
     height: auto;
     box-shadow: 0 0 30px rgb(59, 58, 58);
     border: #463737;
+    padding: 0;
 }
 
 p {
@@ -52,6 +53,9 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    box-shadow: 0 0 30px rgb(59, 58, 58);
+    border: #463737;
+    padding: 0;
 }
 
 footer {
