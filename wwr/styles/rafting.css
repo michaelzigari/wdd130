@@ -116,5 +116,9 @@ header, main, footer {
         background-color: #ff9800;
         color: #fff;
     }
+    header img {
+        width: 200px;
+        height: 200px;
+    }
 
 
