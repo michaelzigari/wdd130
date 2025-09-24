@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0a77ad;
+    --primary-color: #264653;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #060606;
@@ -8,7 +8,7 @@
 }
 header nav {
     background-color:var(--primary-color);
-    opacity: 10;
+    opacity: 0.8;
     color: var(--accent2-color);
     font-size: medium;
 }
@@ -69,7 +69,7 @@ header, main, footer {
         height: 100px;
     }
     nav ul {
-    list-style-type: none;
+    list-style-type:circle;
     }
     nav li {
         margin: 20px 0;
@@ -85,7 +85,36 @@ header, main, footer {
     footer nav img {
         width: 50px;
         height: 50px;
-        align-items: center;
+        align-items:center;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content:center;
+        gap: 100px;
+    }
+    nav li{
+        display: inline;
+    }
+    nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 12px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+    nav a:hover {
+        background-color: #000000;
+        color: #0f4eec;
+        transform: scale(1.1);
+    }
+    nav a:active {
+        background-color: #ff9800;
+        color: #fff;
     }
 
 
