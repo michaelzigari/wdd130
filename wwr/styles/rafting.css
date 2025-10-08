@@ -122,6 +122,23 @@ header, main, footer {
         width: 160px;
         height: 160px;
     }
+    .about-class {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  place-self: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Soft overlay */
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+.about-class h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  margin-left: -26.25rem;
+  padding: 1rem;
+}
 
     .grid {
         display: grid;
@@ -189,19 +206,37 @@ header, main, footer {
     margin-right: 0;
     width: 100%;
     padding: 1rem;
+}
+.footer {
+    display: grid;
     
+    border: 2px solid var(--accent2-color); /* Adds a visible border around the header */
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-bottom-style: -2rem;
+    font-size: 0.85rem;     /* Smaller text */       
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: flex-start;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto; /* Text left, icons right */
+  align-items: center;
+  border-top: 1px solid var(--accent2-color); /* Clean top border */
+  padding: -5rem; /* Reduce height */
+  background-color: var(--accent1-color); /* Match header color */
+  opacity: 0.9; /* Slightly transparent */
+  color: white
 }
+
+
 footer img {
-    justify-content: space-between;
-    position: relative;
+    justify-content:space-evenly;
+    position: relative;         /* Enables z-index to take effect */
     flex-wrap: nowrap;
+    margin-left: -1.5rem;
+    align-items: end;
+    width: -50px;            /* Smaller icons */
+    height: 24px;
 }
 
 .adventures {
@@ -232,3 +267,251 @@ footer img {
     margin-left: 0;
     margin-right: 0;
 }
+
+/* Contact Info Section */
+.contact-info {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--accent1-color);
+  margin-top: -1rem;
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-size: 1rem;
+}
+/*SIDE BY SIDE MAP AND FORM LAYOUT*/
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: none;
+}
+
+/*FORM STYLING*/
+.contact-form {
+  background-color: #fff;
+  padding: 1rem;
+}
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--accent1-color);
+  border-radius: 4px;
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+/*EMPLOYEE PROFILE SECTION*/
+.employee-profiles {
+  border: 2px solid var(--accent2-color); /* Adds a visible border around the header */
+  padding: 1rem;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.employee-profiles h2 {
+  margin-bottom: 1rem;
+}
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  color: black;
+}
+.profiles figure {
+  text-align: center;
+  max-width: 200px;
+}
+.profiles img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.profiles figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+.contact-info h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: #000000;
+     
+}
+
+main h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 8rem 0 1rem -21rem;
+    background-color: #fff;
+    opacity: 0.9;
+    color: #000000;
+    font-size: 2rem;
+}
+
+header {
+  border: 2px solid var(--accent2-color); /* Adds a visible border around the header */
+  padding: 1rem;
+  border-radius: 5px; /* Optional: softens the corners */
+}
+
+header nav {
+    margin: 0 0 0 -10rem;
+}
+
+header img {
+  position: relative;         /* Enables z-index to take effect */
+  z-index: 10;                /* Higher value brings it to the front */
+  width: 160px;
+  height: 160px;
+}
+/*ADDED DIV*/
+.form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form label {
+  width: 100px; /* Adjust width as needed */
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--accent1-color);
+  border-radius: 4px;
+}
+.map {
+    border: 2px solid var(--accent2-color); /* Adds a visible border around the header */
+    padding: 1rem;
+    border-radius: 5px; /* Optional: softens the corners */
+    margin-bottom: 8.8rem;
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 840px;
+  margin-top: -3rem;
+}
+.option {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 840px;
+  justify-items: start; /* Aligns grid items to the left */
+  margin-left: -2.1rem;      /* Nudges it slightly left */
+  margin-top: -2rem;
+}
+.message-purpose {
+  font-weight: bold;
+}
+.pick {
+  margin-left: -3.6rem;      /* Nudges it slightly left */
+}
+.pick {
+  display: block;
+  margin-bottom: 3rem; /* Reduced from default spacing */
+  font-size: 1rem;
+  gap: 0.1rem
+}
+.msg{
+    font-weight: bold;
+}
+.msg-area {
+    margin-top: -6rem;
+    margin-left: -0.7rem;
+}
+.message-purpose {
+    margin-left: -0.5rem;
+}
+.get-in-touch button {
+  width: 100%;               /* Makes the button fill its container */
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: -3rem; 
+}
+.text-area {
+  margin-right: -2rem;   /* Allows manual resizing if needed */
+}
+
+.get-in-touch {
+  margin-right: -0.8rem;    
+}
+#message {
+  height: 100px;         /* Adjust height as needed */
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--accent1-color);
+  border-radius: 6px;
+  resize: vertical;      /* Allows user to resize if needed */
+}
+
+
+
+
+
