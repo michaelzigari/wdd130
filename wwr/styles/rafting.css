@@ -213,7 +213,6 @@ header, main, footer {
     border: 2px solid var(--accent2-color); /* Adds a visible border around the header */
     margin-right: 1rem;
     margin-left: 1rem;
-    border-bottom-style: -2rem;
     font-size: 0.85rem;     /* Smaller text */       
 }
 
@@ -222,7 +221,6 @@ header, main, footer {
   grid-template-columns: 1fr auto; /* Text left, icons right */
   align-items: center;
   border-top: 1px solid var(--accent2-color); /* Clean top border */
-  padding: -5rem; /* Reduce height */
   background-color: var(--accent1-color); /* Match header color */
   opacity: 0.9; /* Slightly transparent */
   color: white
@@ -235,7 +233,6 @@ footer img {
     flex-wrap: nowrap;
     margin-left: -1.5rem;
     align-items: end;
-    width: -50px;            /* Smaller icons */
     height: 24px;
 }
 
