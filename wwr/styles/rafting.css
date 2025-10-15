@@ -6,6 +6,8 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
+
+/* 1: ABOUT US */
 header nav {
     background-color:var(--primary-color);
     
@@ -509,7 +511,490 @@ header img {
   resize: vertical;      /* Allows user to resize if needed */
 }
 
+/* 3: INDEX HTML */
+
+.hero-sect {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left:-1.5rem;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:42rem;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 0.6rem 1.2rem;
+  margin-left: -1rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 51, 51, 0.6));
+  border: 1px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+  animation: pulse-glow 3s infinite ease-in-out;
+  margin-top: -5rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #dc923d;
+  padding: 2rem;
+  text-align: center;
+  max-width: 840px;
+}
+
+.newsletter {
+  position: relative;
+  background-color: #dc923d;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.3) 0%, transparent 40%),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 5px, transparent 5px, transparent 10px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 5px, transparent 5px, transparent 10px);
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  z-index: 1;
+}
 
 
+.newsletter h2 {
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  width: 300px;
+  max-width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1.5rem;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #004d40;
+}
+
+/* Grid Layout Section */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.grid-item {
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+ .grid-item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.grid-item img:hover {
+  transform: scale(1.1) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*ADDITIONAL ANIMATION*/
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.2) 0%, transparent 60%),
+    linear-gradient(45deg, rgba(0, 150, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 0, 150, 0.1) 25%, transparent 25%);
+  background-size: cover;
+  z-index: 0;
+}
+
+.grid-item img {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.grid-item img:hover {
+  transform: scale(1.1) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*LAST SECTION IN MAIN */
+.exploration-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #dc923d;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 840px;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.3) 0%, transparent 40%),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 5px, transparent 5px, transparent 10px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 5px, transparent 5px, transparent 10px);
+  background-blend-mode: overlay;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.highlight-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 840px;
+  margin: 0 auto;
+
+}
+
+.highlight-image {
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 12px;
+}
+
+.highlight-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--accent1-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 2;
+  margin-right: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+  justify-content: center;
+  margin-left:5rem
+}
+
+.join-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: center;
+}
+
+.join-button:hover {
+  background-color: var(--accent1-color);
+}
+
+@keyframes slideDownRight {
+  0% {
+    top: -100px;
+    left: 0;
+    opacity: 0;
+  }
+  50% {
+    top: 50px;
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 50px;
+    left: 50px;
+    opacity: 1;
+  }
+}
+
+.highlight-image {
+  border-radius: 10px;
+  animation: floatUp 5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+/* Float upward animation only */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* 4 TRIPS HTML */
+/* Call to Action */
+.cta {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #f4a261, #e76f51);
+  color: #fff;
+  animation: pulse 3s infinite;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #264653;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.trip-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-10px);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  animation: floatImage 6s infinite ease-in-out;
+}
+
+.trip-card h3 {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #264653;
+}
+
+.trip-card p {
+  padding: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Trip Table */
+.trip-table {
+  padding: 2rem;
+  animation: fadeInUp 2s ease-out;
+}
+
+.trip-table h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #264653;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4a261;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #fdf6f0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.trip-table h2{
+  color: #fff;
+}
+
+.trip-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  position: relative;
+  background-image: url('/images/trip-background.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* Optional: overlay for readability */
+.trip-descriptions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* Soft white overlay */
+  z-index: -1;
+}
+
+.trip-descriptions::before {
+  background-color: transparent;
+}
+
+.trip-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #000; /* Outline color and thickness */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 1rem;
+}
 
 
+.trip-card h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+
+  /* Multicolor gradient background */
+  background: linear-gradient(45deg, #ff4e50, #f9d423, #1e90ff, #00fa9a);
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease infinite;
+
+  /* Text fill and outline */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
